@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive E-commerce Website</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background-color: #333; color: white; }
+        header .logo { font-size: 24px; }
+        header nav ul { list-style-type: none; display: flex; }
+        header nav ul li { margin: 0 15px; }
+        header nav ul li a { color: white; text-decoration: none; }
+        header .cart-icon a { color: white; }
+        .search-bar { text-align: center; margin: 20px; }
+        .search-bar input { width: 60%; padding: 10px; margin-right: 10px; }
+        .search-bar button { padding: 10px; background-color: #333; color: white; border: none; }
+        main { padding: 20px; text-align: center; }
+        .product-container { display: flex; justify-content: space-around; flex-wrap: wrap; }
+        .product { margin: 10px; width: 200px; }
+        .product img { width: 100%; height: auto; }
+        .product h3 { font-size: 18px; }
+        .product p { font-size: 16px; }
+        footer { background-color: #333; color: white; text-align: center; padding: 20px; }
+        footer ul { list-style-type: none; display: flex; justify-content: center; margin-top: 10px; }
+        footer ul li { margin: 0 15px; }
+        footer ul li a { color: white; text-decoration: none; }
+        @media (max-width: 768px) {
+            header { flex-direction: column; text-align: center; }
+            header nav ul { flex-direction: column; }
+            header nav ul li { margin: 10px 0; }
+            footer ul { flex-direction: column; }
+            footer ul li { margin: 5px 0; }
+            .product-container { justify-content: center; }
+            .product { width: 150px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">MyShop</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            <a href="#">Cart (3)</a>
+        </div>
+    </header>
+
+    <section class="search-bar">
+        <input type="text" placeholder="Search for products...">
+        <button>Search</button>
+    </section>
+
+    <main>
+        <h1>Featured Products</h1>
+        <div class="product-container">
+            <div class="product">
+                <img src="product1.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$29.99</p>
+            </div>
+            <div class="product">
+                <img src="product2.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$19.99</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 MyShop. All rights reserved.</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+    </footer>
+
+</body></html>
+
+
+
+
+
+    
